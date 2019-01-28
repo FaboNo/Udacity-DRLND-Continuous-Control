@@ -10,9 +10,9 @@ In this environment, a double-jointed arm can move to target locations. A reward
 
 The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
 
-### Distributed Training
+### Single vs Distributed Training
 
-For this project, can be done with two separate versions of the Unity environment:
+For this project, there are two separate versions of the Unity environment:
 - The first version contains a single agent.
 - The second version contains 20 identical agents, each with its own copy of the environment (see [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p2_continuous-control) for more information).
 
@@ -35,7 +35,7 @@ The environment can be downloaded from one of the links below for all operating 
 
 ### Approach and solution
 
-The notebook `Continuous_Control.ipynb` contains the code to set up the environment and and the different classes used to solve  the reinforcement problem. Our solution uses a Deep Deterministic Policy Gradient approach (DDPG) with experience replay, see this [paper](https://arxiv.org/pdf/1509.02971.pdf).
+The notebook `Continuous_Control.ipynb` contains the code to set up the environment and and the different classes used to solve  the reinforcement problem. Our solution implements a Deep Deterministic Policy Gradient approach (DDPG) with experience replay, for more details about the theory and the description of the algorithm, please refer to this [paper](https://arxiv.org/pdf/1509.02971.pdf).
 
 The DDPG agent implemented in the notebook is able to solve the problem in 762 episodes - see pic below:
 ![Solution](solve.png?raw=true "Solution")

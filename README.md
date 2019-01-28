@@ -37,5 +37,7 @@ The environment can be downloaded from one of the links below for all operating 
 
 The notebook `Continuous_Control.ipynb` contains the code to set up the environment and and the different classes used to solve  the reinforcement problem. Our solution implements a Deep Deterministic Policy Gradient approach (DDPG) with experience replay, for more details about the theory and the description of the algorithm, please refer to this [paper](https://arxiv.org/pdf/1509.02971.pdf).
 
+The description of the solution (hyper-parameters, actor/critic networks, ...) is provided in the report document.
+
 The DDPG agent implemented in the notebook is able to solve the problem in 762 episodes - see pic below:
 ![Solution](solve.png?raw=true "Solution")
